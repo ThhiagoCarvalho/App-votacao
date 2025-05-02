@@ -1,0 +1,4 @@
+{"responseData":{"translatedText":"bom","match":1},"quotaFinished":false,"mtLangSupported":null,"responseDetails":"","responseStatus":200,"responderId":null,
+"exception_code":null,"matches":[{"id":"578539183","segment":"good","translation":"bom","source":"en-GB","target":"pt-PT","quality":"74","reference":null,
+"usage-count":33,"subject":"All","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2022-12-14 16:01:17","last-update-date":"2022-12-14 16:01:17",
+"match":1,"penalty":0}]}

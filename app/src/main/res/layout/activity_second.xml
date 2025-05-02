@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="16dp">  <!-- Adiciona espaçamento para melhor visualização -->
+
+    <!-- Seletor de idioma de origem -->
+    <!-- Adiciona um espaçamento entre o spinner e o EditText -->
+
+    <!-- Seletor de idioma de destino -->
+
+
+    <!-- Campo de entrada de texto -->
+
+    <!-- Campo de saída (Texto traduzido) -->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="601dp"
+
+        android:layout_height="85dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="58dp"
+        android:background="#679bfe"
+        app:layout_constraintBottom_toTopOf="@+id/idioma1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idioma1"
+        android:layout_width="172dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toStartOf="@id/idioma2"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idioma2"
+        android:layout_width="173dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@id/Texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@id/idioma1" />
+
+    <!-- Botão de tradução -->
+
+    <EditText
+        android:id="@+id/Texto"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:hint="Digite o texto aqui"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idioma1" />
+
+    <EditText
+        android:id="@+id/TextoTraduzido"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:background="#E0E0E0"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="Tradução aparecerá aqui"
+        android:inputType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Texto" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTraduzir"
+        android:layout_width="182dp"
+        android:layout_height="61dp"
+        android:background="#679bfe"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:radius="100dp"
+        android:text="Traduzir"
+        android:textColor="#FFFF"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLimpar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avText"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLimpar"
+        android:layout_width="172dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:background="#FE7667"
+        android:fontFamily="sans-serif"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:radius="100dp"
+
+        android:text="Limpar"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTraduzir"
+        app:layout_constraintTop_toBottomOf="@+id/avText"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/avText"
+        android:layout_width="367dp"
+        android:layout_height="47dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:textColor="#D00A0A"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoTraduzido"
+        app:layout_constraintVertical_bias="0.147" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
